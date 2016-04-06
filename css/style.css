@@ -1,0 +1,560 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+
+/* button */
+
+.sliding-u-l-r {
+display: inline-block;
+}
+.sliding-u-l-r:after {
+content: '';
+display: block;
+height: 1px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-u-l-r:hover:after {
+width: 100%;
+background: black;
+}
+
+
+
+
+.splash {
+	height:100%;
+}
+.splash .my-bg {
+	background-image: url('../img/splash.jpg');
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.splash .content-holder {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+/* .splash .header{
+	background-image: url('../img/logo.png');
+	height:93px;
+	margin-top: 297px;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-content: center;
+	justify-content: center;
+
+} */
+
+.aniani {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s linear forwards;
+  width: 100%;
+
+
+  
+
+
+}
+
+#Layer_1 {
+	text-align: center;
+}
+
+
+
+.bp-logo-small {
+  width: 100px;
+  height:93px;
+  margin-left: 100px;
+  margin-top:30px;
+   transition: all 0.4s ease-in-out;
+
+
+}
+
+.bp-logo-small:hover {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dashe 5s alternate infinite;
+  width: 100px;
+  height:93px;
+  margin-left: 100px;
+
+
+
+}
+
+@keyframes dashe {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.splash .description {
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.2em;
+	color: #ededed;
+	margin-top:10px;
+	letter-spacing: 5px;
+}
+
+/* bounce */
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background: url(../img/arrow.png) ;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+
+/* navbar */
+
+#mynavbar {
+	width: 300px;
+}
+
+.navbar {
+	z-index: 100;
+}
+
+.nav {
+	margin-top: 55px;
+	width: 200px;
+	margin-left: 89px;
+	height: 500px;
+
+
+}
+
+.navbar-brand {
+	padding-top: 0px;
+}
+
+.nav>li>a:hover {
+	color: #1e392a;
+	background-color: rgba(0,0,0,0);
+	width: 200px;
+	transition: all 0.4s ease-in-out;
+}
+
+.nav>li>a:focus {
+	background-color: rgba(0,0,0,0);
+	width: 200px;
+}
+
+.nav a {
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-size: 13pt;
+	color: #3cc47c;
+	letter-spacing: 3px;
+}
+
+.nav h6 {
+	
+	font-family: 'Overpass', sans-serif;
+	font-size: 8pt;
+	line-height: 14px;
+	color: #3cc47c;
+	vertical-align: bottom;
+	position: absolute; 
+	bottom: 0;
+	display: table-cell;
+	margin-left: 14px;
+}
+
+
+/* line */
+.lineani {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s alternate infinite;
+  height: 30px;
+  margin-left: -1px;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* sticky */
+#sticky-sticky-wrapper, .sticky-wrapper {
+	width: 300px;
+}
+
+
+/* i-am */
+.i-am {
+	height: 140px;
+}
+
+.find-me {
+	height: 750px;
+}
+
+
+
+.works {
+	height: 100%;
+}
+
+
+
+
+.i-am-pic {
+	margin-top: 20px;
+	height: 467px;
+}
+
+
+/* overpass */
+
+
+
+.works h1, .find-me h1, .work-title h1 {
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-size: 40pt;
+	color: #3cc47c;
+	margin-bottom: -2px;
+	padding-top: 40px;
+	
+}
+
+.i-am h1 {
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-size: 40pt;
+	padding-top: 60px;
+	color: #3cc47c;
+	padding-bottom: 0;
+	
+}
+
+
+
+.i-am-a {
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-size: 40pt;
+	padding-top: 0px;
+	color: #3cc47c;
+	
+}
+
+.i-am-a h4 {
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 40px;
+	color: #346349;
+}
+
+.i-am-photo {
+	height: 700px;
+}
+
+/* works */
+
+.the-margin {
+	margin-right: 20px;
+}
+
+
+.work {
+	width: 400px;
+	height: 300px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	cursor: default;
+	transition: all 0.4s ease-in-out;
+
+}
+
+.work-margin {
+	margin-top: 10px;
+}
+
+.work-1-bg {
+	background-image: url("../img/work-1.jpg");
+}
+
+.work-2-bg {
+	background-image: url("../img/work-2.jpg");
+}
+
+.work-3-bg {
+	background-image: url("../img/work-3.jpg");
+}
+
+.work-4-bg {
+	background-image: url("../img/work-4.jpg");
+}
+
+.work-5-bg {
+	background-image: url("../img/work-5.jpg");
+}
+
+.work-6-bg {
+	background-image: url("../img/work-6.jpg");
+}
+
+.info {
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+	text-align: center;
+	left: 0px;
+	font-family: 'Overpass', sans-serif;
+	text-decoration: none;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0 30px;
+	vertical-align: center;
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	text-shadow: 
+		0 0 0px #fff, 
+		0 0px 0px rgba(0,0,0,0.3);
+
+
+}
+
+.info a{
+	text-decoration: none;
+}
+
+.info p {
+	color: #fff;
+	font-style: italic;
+	margin-top: 1px;
+	font-size: 12px;
+	border-top: 0px solid rgba(255,255,255,0.5);
+}
+
+.info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	font-family: 'Overpass', sans-serif;
+
+}
+
+.info p a:hover {
+	color: rgba(255,242,34, 0.8);
+	text-decoration: none
+
+}
+
+.work:hover {
+	box-shadow: 
+		inset 0 0 0 0px rgba(30, 56, 42, 0.3),
+		inset 0 0 0 200px rgba(30, 56, 42, 0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.work:hover .info {
+	opacity: 1;
+	transform: scale(1);	
+}
+
+
+.find-me h3, .work-content h3 {
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+	color: 	#1e392a;
+
+}
+
+
+
+
+.find-me h4 {
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 24px;
+	padding-top: 10px;
+
+}
+
+.work-content h4 {
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 40px;
+
+}
+
+.find-me-links {
+	font-family: 'Overpass', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 24px;
+	padding-top: 0px;
+	letter-spacing: 1px;
+	color: 	#1e392a;
+
+
+}
+ 
+.find-me-links a:hover {
+	color: #1e392a;
+	text-decoration: none;
+		transition: all 0.4s ease-in-out;
+}
+
+.email a:hover {
+	color: #1e392a;
+	text-decoration: none;
+		transition: all 0.4s ease-in-out;
+}
+
+
+.find-me a {
+	color: #3cc47c;
+
+}
+
+
+/* work content */
+.work-content {
+	padding-bottom: 50px;
+
+}
+
+/* back to button */
+.back-to-button a:hover {
+	color: #1e392a;
+	background-color: rgba(0,0,0,0);
+	width: 200px;
+	transition: all 0.4s ease-in-out;
+	text-decoration: none;
+}
+
+.back-to-button a:focus {
+	background-color: rgba(0,0,0,0);
+	width: 200px;
+	text-decoration: none;
+}
+
+.back-to-button a {
+	font-family: 'Overpass', sans-serif;
+	src: url('Overpass-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-size: 13pt;
+	color: #3cc47c;
+	letter-spacing: 3px;
+	padding-top: 30px;
+}

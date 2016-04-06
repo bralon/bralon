@@ -1,0 +1,279 @@
+/* button */
+
+.sliding-u-l-r {
+display: inline-block;
+}
+.sliding-u-l-r:after {
+content: '';
+display: block;
+height: 1px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-u-l-r:hover:after {
+width: 100%;
+background: black;
+}
+
+
+
+
+.splash {
+	height:100%;
+}
+.splash .my-bg {
+	background-image: url('../img/splash.jpg');
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+/* .splash .header{
+	background-image: url('../img/logo.png');
+	height:93px;
+	margin-top: 297px;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-content: center;
+	justify-content: center;
+
+} */
+
+.aniani {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s linear forwards;
+  width: 100px;
+  	height:93px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.bp-logo-small {
+  width: 100px;
+  	height:93px;
+  	margin-left: 100px;
+
+
+}
+
+.bp-logo-small:hover {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dashe 5s alternate infinite;
+  width: 100px;
+  	height:93px;
+  	margin-left: 100px;
+
+
+}
+
+@keyframes dashe {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.splash .description {
+	text-align: center;
+	font-family: 'EPF', serif;
+	font-size: 1.2em;
+	color: #ededed;
+	margin-top:160px;
+	letter-spacing: 5px;
+}
+
+/* bounce */
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background: url(../img/arrow.png) ;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+
+
+#sticky{
+	padding-top: 30px;
+	width: 500px;
+}
+
+/* navbar */
+
+#mynavbar {
+	width: 300px;
+}
+
+.navbar {
+	z-index: 100;
+}
+
+.nav {
+	margin-top: 55px;
+	width: 200px;
+	margin-left: 89px;
+
+
+}
+
+.navbar-brand {
+	padding-top: 0px;
+}
+
+.nav>li>a:hover {
+	color: #1e392a;
+	background-color: rgba(0,0,0,0);
+	width: 200px;
+}
+
+.nav>li>a:focus {
+		background-color: rgba(0,0,0,0);
+	width: 200px;
+}
+
+.nav a {
+	font-family: 'EPF', serif;
+	font-size: 13pt;
+	color: #3cc47c;
+	letter-spacing: 3px;
+}
+
+.copyright {
+	margin-left: 100px;
+	font-family: 'EPF', serif;
+	padding-top: 270px;
+	font-size: 7pt;
+	color: #3cc47c;
+
+}
+
+
+/* line */
+.lineani {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1s alternate infinite;
+  height: 20px;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+/* i-am */
+.i-am, .find-me {
+	height: 700px;
+}
+
+.works {
+	height: 1000px;
+}
+
+
+.i-am h1, .works h1, .find-me h1 {
+	font-family: 'EPF', serif;
+	font-size: 40pt;
+	padding-top: 50px;
+	color: #3cc47c;
+	padding-bottom: 0;
+
+}
+
+.i-am h4 {
+	font-family: 'EPF', serif;
+	line-height: 40px;
+	padding-top: 10px;
+}
+
+.i-am-photo {
+	height: 700px;
+}
+
+/* works */
+.works, .find-me {
+	margin-left:350px;
+}
+
+.work-1, .work-2, .work-3, .work-4, .work-5, .work-6 {
+	margin-top: 30px;
+
+}

@@ -232,6 +232,7 @@ background: black;
 	color: #3cc47c;
 	vertical-align: bottom;
 	position: absolute; 
+	padding-bottom: 15px;
 	bottom: 0;
 	display: table-cell;
 	margin-left: 14px;
